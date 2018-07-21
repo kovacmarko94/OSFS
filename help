@@ -1,2 +1,0 @@
-# Show hex values
-hexdump -C yourfile.bin

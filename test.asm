@@ -1,5 +1,10 @@
 [org 0x7c00]
 
+mov bx, HELLO
+call print_string
+
+jmp $
+
 mov ah, 0x0e
 
 print_string:
@@ -13,10 +18,11 @@ print:
   add bx, 1
   jmp print_string
 
-jmp $
+; data
+HELLO:
+    db 'Hello, World', 0
 
-times 510 - ($ - $$) db 0
+; padding and magic number
+times 510-($-$$) db 0
 
 dw 0xaa55
-
-times 256 dw 0xdada
