@@ -1,4 +1,5 @@
 kernel/bin
 kernel/*.o
+drivers/*.o
 boot/bin
 *.bin
