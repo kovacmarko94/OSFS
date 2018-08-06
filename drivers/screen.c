@@ -1,5 +1,5 @@
 #include "screen.h"
-#include "ports.h"
+#include "../drivers/ports.h"
 
 /* Declaration of private functions */
 int get_cursor_offset();
